@@ -6,10 +6,10 @@ services:
     restart: always
     env_file:
       - db/database.env
-    ports:
-      - "5432:5432"
+    expose:
+      - "5432"
 
-  web:
+  backend:
     container_name: django
     build: ./django_app/
     command: >
@@ -17,12 +17,24 @@ services:
     env_file:
       - db/database.env
     volumes:
-    #  - ./django_app/:/code/
+      - ./django_app/:/code/
       - staticfiles:/code/staticfiles/
-    ports:
-      - "8899:8899"
+    expose:
+      - "8899"
     depends_on:
       - db
+
+  frontend:
+    container_name: react
+    build: ./rushr-reactjs/
+    command: >
+      npm start
+    volumes:
+      - staticfiles:/app/staticfiles/
+    expose:
+      - "3000"
+    depends_on:
+      - backend
 
   nginx:
     container_name: nginx
@@ -34,7 +46,7 @@ services:
       - ./nginx/:/etc/nginx/conf.d/
       - staticfiles:/code/staticfiles/
     depends_on:
-      - web
+      - frontend
 
 volumes:
   staticfiles:
