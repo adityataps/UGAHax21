@@ -4,10 +4,14 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-export default function Login({ setToken }) {
+export default function Login() {
 
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+    const [error, setError] = useState(null)
+    // const signInWithEmailAndPasswordHandler = (event, email, password) => {
+    //     event.preventDefault()
+    // }
 
     return (
         <div className={"login-wrapper"}>
@@ -27,7 +31,7 @@ export default function Login({ setToken }) {
                         <Form.Control type={"password"} placeholder={"Password"} onChange={e => setPassword(e.target.value)} />
                     </Form.Group>
 
-                    <Button variant={"primary"} type={"submit"}>
+                    <Button variant={"primary"} type={"submit"} href={"/dashboard"}>
                         Login
                     </Button>
                 </Form>
