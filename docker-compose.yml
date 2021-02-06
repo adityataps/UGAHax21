@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:12
+    restart: always
+    env_file:
+      - db/database.env
+    ports:
+      - "5432:5432"
+
+  web:
+    container_name: django
+    build: ./django_app/
+    command: >
+      gunicorn django_app.wsgi:application --bind 0.0.0.0:8899 --workers=4
+    env_file:
+      - db/database.env
+    volumes:
+    #  - ./django_app/:/code/
+      - staticfiles:/code/staticfiles/
+    ports:
+      - 8899:8899
+    depends_on:
+      - db
+
+  nginx:
+    container_name: nginx
+    image: nginx:mainline
+    restart: always
+    ports:
+      - 8000:80
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - staticfiles:/code/staticfiles/
+    depends_on:
+      - web
+
+volumes:
+  staticfiles:
