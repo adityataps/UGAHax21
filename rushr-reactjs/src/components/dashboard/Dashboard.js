@@ -1,8 +1,11 @@
 import React from 'react';
+import SalesLine from './charts/SalesLine'
 
 export default function Dashboard() {
     return (
-        <h2> Welcome! This is the dashboard. </h2>
+        <div>
+            {/*<SalesLine />*/}
+        </div>
     )
 }
 

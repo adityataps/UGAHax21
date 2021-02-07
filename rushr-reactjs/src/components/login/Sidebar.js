@@ -1,9 +1,9 @@
 import React from 'react'
 import './Sidebar.css'
-import rushrLogo from '../assets/rushrLogo.png'
+import rushrLogo from '../assets/images/rushrLogo.png'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import ncrBranding from '../assets/ncrBranding.png'
+import ncrBranding from '../assets/images/ncrBranding.png'
 
 const Sidebar = () => {
     return(
@@ -27,7 +27,7 @@ const Sidebar = () => {
                         </Form.Label>
                     </div>
                     <br/>
-                    <Button size="lg" variant="success" type="submit" style={{"width": "50%"}}>
+                    <Button size="lg" variant="success" type="submit" style={{"width": "50%"}} href={"/dashboard"}>
                         Sign in
                     </Button>
                 </Form>
