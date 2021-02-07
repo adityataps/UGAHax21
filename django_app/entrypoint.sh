@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MANAGE=manage.py
-TEST_DATA=test_data.json
+TEST_DATA=test_data_w_transactions.json
 
 echo "Waiting for PostgreSQL..."
 while ! nc -z db 5432; do
