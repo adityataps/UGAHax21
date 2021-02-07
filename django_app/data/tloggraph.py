@@ -46,22 +46,24 @@ def pieGraph():
     transactionsarray = []
     for array in dataarray:
         if array['fields'] is not None and 'prod_name' in list(array['fields'].keys()):
-            print(array['fields'].keys())
             transactionsarray.append(array['fields'])
-    producelist = []
+    categorylist = []
+    print(transactionsarray)
     sizes = []
     for transaction in transactionsarray:
-        prodName = transaction['prod_name']
-        if prodName not in producelist:
-            producelist.append(prodName)
-        label = producelist.index(prodName)
-        quantity = transaction['quantity']
-        if len(producelist) != len(sizes):
+        categoryName = transaction['category']
+        if 'Misc.' in categoryName or 'None Given' in categoryName:
+            categoryName = "Misc."
+        if categoryName not in categorylist:
+            categorylist.append(categoryName)
+        label = categorylist.index(categoryName)
+        quantity = 1
+        if len(categorylist) != len(sizes):
             sizes.append(quantity)
         else:
             sizes[label] = sizes[label] + quantity
     fig, ax = plt.subplots()
-    ax.pie(sizes, labels=producelist, autopct='%1.1f%%')
+    ax.pie(sizes, labels=categorylist, autopct='%1.1f%%')
     ax.axis('equal')
     plt.title("Quantity of Sales of each item compared to Total Sales")
     plt.show()
