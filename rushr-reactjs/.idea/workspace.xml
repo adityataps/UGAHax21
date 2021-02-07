@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ffbf234-a7ed-4e2f-9694-82d7d1fb5aa2" name="Default Changelist" comment="removed login backend">
+    <list default="true" id="4ffbf234-a7ed-4e2f-9694-82d7d1fb5aa2" name="Default Changelist" comment="modified favicon.ico">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDMdata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/assets/homeBgr.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/assets/images/homeBgr.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/assets/ncrBranding.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/assets/images/ncrBranding.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/assets/rushrLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/assets/images/rushrLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Sidebar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/assets/canvasJS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -51,9 +53,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adits\Documents\UGA-Hacks\UGAHax21\rushr-reactjs\src\components\assets\canvasJS" />
       <recent name="C:\Users\Adits\Documents\UGA-Hacks\UGAHax21\rushr-reactjs\src\components\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adits\Documents\UGA-Hacks\UGAHax21\rushr-reactjs\src\components\assets\images" />
       <recent name="C:\Users\Adits\Documents\UGA-Hacks\UGAHax21\rushr-reactjs\src\components\app" />
     </key>
   </component>
@@ -66,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612590945738</updated>
       <workItem from="1612590947314" duration="60715000" />
-      <workItem from="1612669749368" duration="5249000" />
+      <workItem from="1612669749368" duration="10430000" />
     </task>
     <task id="LOCAL-00001" summary="login component layout">
       <created>1612597961504</created>
@@ -89,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612637959919</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modified favicon.ico">
+      <created>1612675126606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612675126606</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login component layout" />
     <MESSAGE value="removed login backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed login backend" />
+    <MESSAGE value="modified favicon.ico" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified favicon.ico" />
   </component>
 </project>
