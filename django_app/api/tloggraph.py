@@ -66,4 +66,3 @@ def pieGraph():
     ax.axis('equal')
     plt.title("Quantity of Sales of each item compared to Total Sales")
     plt.savefig('categorypiegraph.png', dpi=500)
-    plt.show()
