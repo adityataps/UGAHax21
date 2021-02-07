@@ -43,7 +43,7 @@ def createorder():
 
 
 def gettlogbyid(orderid):
-    bsporgkey = 'f62afa5aab2d4a249cd88c6e0eb1a733'
+    bsporgkey = 'ur-hack'
     bspsecretkey = 'aab8e7d75ce74748ae07f39bf990aa8a'
     bspsharedkey = 'fa24bf888a8647bbb5bfd4d35cd73fd1'
     bspsiteid = '9122a304a3444db984ea21beaf315c1d'
@@ -65,14 +65,14 @@ def gettlogbyid(orderid):
                                              nepCorrelationID=None,
                                              nepServiceVersion=None)
     headers = {'Content-type': 'application/json', 'Authorization': accesskey,
-               'nep-organization': bsporgkey, 'nep-enterprise-unit': bspsiteid,
+               'nep-organization': bsporgkey,
                'Date': utcDate}
     response = requests.get(requesturl, headers=headers)
     return response.json()
 
 
 def findtlogs():
-    bsporgkey = 'f62afa5aab2d4a249cd88c6e0eb1a733'
+    bsporgkey = 'ur-hack'
     bspsecretkey = 'aab8e7d75ce74748ae07f39bf990aa8a'
     bspsharedkey = 'fa24bf888a8647bbb5bfd4d35cd73fd1'
     bspsiteid = '9122a304a3444db984ea21beaf315c1d'
@@ -104,10 +104,10 @@ def findtlogs():
     }
     payload = json.dumps(data)
     headers = {'Content-type': 'application/json', 'Authorization': accesskey,
-               'nep-organization': bsporgkey, 'nep-enterprise-unit': bspsiteid,
+               'nep-organization': bsporgkey,
                'Date': utcDate}
     response = requests.post(requesturl, payload, headers=headers)
     return response.json()
 
 
-print(gettlogbyid('fa0af382-6417-4345-bc99-b341c4cd744b'))
+print(findtlogs())
