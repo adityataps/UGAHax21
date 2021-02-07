@@ -48,7 +48,6 @@ def pieGraph():
         if array['fields'] is not None and 'prod_name' in list(array['fields'].keys()):
             transactionsarray.append(array['fields'])
     categorylist = []
-    print(transactionsarray)
     sizes = []
     for transaction in transactionsarray:
         categoryName = transaction['category']
@@ -66,4 +65,7 @@ def pieGraph():
     ax.pie(sizes, labels=categorylist, autopct='%1.1f%%')
     ax.axis('equal')
     plt.title("Quantity of Sales of each item compared to Total Sales")
+    plt.savefig('categorypiegraph.png', dpi=500)
     plt.show()
+
+pieGraph()
