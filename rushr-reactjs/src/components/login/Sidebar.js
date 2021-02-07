@@ -38,7 +38,7 @@ const Sidebar = () => {
             <div style={{"text-align": "center"}}>
             <img src={ncrBranding}
                  alt={""}
-                 style={{"width": "30%", "height": "auto", "margin-top": "90%"}}
+                 style={{"width": "20%", "height": "auto", "margin-top": "10%"}}
                  />
             </div>
         </div>
