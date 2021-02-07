@@ -8,20 +8,7 @@ import Login from "../login/Login";
 
 
 function App() {
-    // const {token, setToken} = useState();
 
-    // // if user has not logged in
-    // if (!token) {
-    //     return (
-    //         <div className={"wrapper"}>
-    //             <h1>rushr</h1>
-    //             <h3>app made for UGAHacks 6</h3>
-    //             <Login setToken={setToken} />
-    //         </div>
-    //     )
-    // }
-
-    // if user has logged in
     return (
         <div className={"wrapper"}>
 
