@@ -1,0 +1,23 @@
+.sidebar-wrapper {
+    background: #E3E3E3;
+    opacity: 90%;
+    min-width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.rushr-logo {
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+}
+
+.credentials-form {
+    margin: 15%;
+    text-align: center;
+}
+
+.new-acct {
+    margin-top: 20%;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+.left-wrapper {
+    min-width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.left-text {
+    font-size: 5vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    color: #BCBCBC;
+    text-align: center;
+}

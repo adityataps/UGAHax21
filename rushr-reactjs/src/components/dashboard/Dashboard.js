@@ -5,3 +5,4 @@ export default function Dashboard() {
         <h2> Welcome! This is the dashboard. </h2>
     )
 }
+
