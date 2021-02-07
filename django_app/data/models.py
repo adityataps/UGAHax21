@@ -3,9 +3,8 @@ from django.db import models
 
 # Create your models here.
 class Transaction(models.Model):
-    tid = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    tid = models.CharField(primary_key=True, max_length=120)
     site = models.CharField(max_length=100)
-    tnum = models.IntegerField()
     receiptId = models.IntegerField()
     employee = models.CharField(max_length=120)
     total_gross = models.DecimalField(max_digits=6, decimal_places=2)
@@ -23,7 +22,7 @@ class TransactionItem(models.Model):
     prod_name = models.CharField(max_length=120)
     is_return = models.BooleanField()
     unit_price = models.DecimalField(max_digits=6, decimal_places=2)
-    quantity = models.IntegerField()
+    quantity = models.IntegerField(null=True, blank=True)
     unit_of_measure = models.CharField(max_length=50)
     category = models.CharField(max_length=50)
 

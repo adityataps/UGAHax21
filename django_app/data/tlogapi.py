@@ -110,4 +110,3 @@ def findtlogs():
     return response.json()
 
 
-print(findtlogs())
